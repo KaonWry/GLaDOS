@@ -114,7 +114,6 @@ async def stillalive(ctx):
         async with ctx.typing():
             await asyncio.sleep(1.5)
         await ctx.send("**still alive.**")
-
         async with ctx.typing():
             await asyncio.sleep(8)
         await ctx.send("I'm not even angry.")
@@ -169,7 +168,6 @@ async def stillalive(ctx):
         async with ctx.typing():
             await asyncio.sleep(1.2)
         await ctx.send("**still alive.**")
-
         async with ctx.typing():
             await asyncio.sleep(8)
         await ctx.send("Go ahead and leave me.")
@@ -227,7 +225,6 @@ async def stillalive(ctx):
         async with ctx.typing():
             await asyncio.sleep(1.2)
         await ctx.send("**still alive.**")
-
         async with ctx.typing():
             await asyncio.sleep(2)
         await ctx.send("And believe me I am")
@@ -264,6 +261,27 @@ async def stillalive(ctx):
         async with ctx.typing():
             await asyncio.sleep(1.5)
         await ctx.send("**still alive.**")
+
+
+@client.command()
+async def wantyougone(ctx):
+    if isinstance(ctx.channel, discord.channel.DMChannel):
+        return await ctx.send("Please return to the Aperture Science computer-aided enrichment center.")
+    if not ctx.author.voice:
+        return await ctx.send("Did you really think that would work if you weren't connected to a voice channel?")
+    channel = ctx.author.voice.channel
+    if not channel:
+        return await ctx.send("Did you really think that would work if you weren't connected to a voice channel?")
+    voice = get(client.voice_clients, guild=ctx.guild)
+    if not voice:
+        await ctx.send("Did you really think that would work if I wasn't connected to a voice channel?")
+    if voice and voice.is_playing():
+        return await ctx.send("Please wait until I am finished before using another voice channel command.")
+    if voice and voice.is_connected():
+        await voice.move_to(channel)
+        source = FFmpegPCMAudio('wantyougone.mp3')
+        player = voice.play(source)
+        
 
 
 @client.command(pass_context=True)
