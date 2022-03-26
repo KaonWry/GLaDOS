@@ -281,6 +281,40 @@ async def wantyougone(ctx):
         await voice.move_to(channel)
         source = FFmpegPCMAudio('wantyougone.mp3')
         player = voice.play(source)
+        async with ctx.typing():
+            await asyncio.sleep(5)
+        await ctx.send("Well here we are again")
+        async with ctx.typing():
+            await asyncio.sleep(3)
+        await ctx.send("It's always such a pleasure")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("Remember when you tried")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("to kill me twice?")
+        async with ctx.typing():
+            await asyncio.sleep(3)
+        await ctx.send("Oh how we laughed and laughed")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("Except I wasn't laughing")
+        async with ctx.typing():
+            await asyncio.sleep(3)
+        await ctx.send("Under the circumstances")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("I've been shockingly nice")
+        async with ctx.typing():
+            await asyncio.sleep(3)
+        await ctx.send("You want your freedom?")
+        async with ctx.typing():
+            await asyncio.sleep(3)
+        await ctx.send("Take it")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("That's what I'm counting on")
+
         
 
 
