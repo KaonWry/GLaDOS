@@ -5,13 +5,17 @@
 import discord
 import time
 import asyncio
+import os
+from dotenv import load_dotenv
 from discord.ext import commands,tasks
 from time import sleep
 from discord import FFmpegPCMAudio
 from discord.utils import get
 
+load_dotenv()
+
 client = commands.Bot(command_prefix = ['-', 'GLaD '])
-TOKEN = open("gladtoken.txt","r").readline()
+TOKEN = os.getenv('TOKEN')
 
 @client.event
 async def on_ready():
