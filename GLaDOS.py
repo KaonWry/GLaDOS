@@ -15,11 +15,13 @@ from discord.utils import get
 load_dotenv()
 
 client = commands.Bot(command_prefix = ['-', 'GLaD '])
-TOKEN = os.getenv('BOT_TOKEN')
+TOKEN = os.getenv("DISCORD_TOKEN")
 
+    
 @client.event
 async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name="Portal"))
+    print(f"Logged in as {bot.user.name}({bot.user.id})")
 
 @client.command()
 async def join(ctx):
