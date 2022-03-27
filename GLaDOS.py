@@ -314,8 +314,99 @@ async def wantyougone(ctx):
         async with ctx.typing():
             await asyncio.sleep(2)
         await ctx.send("That's what I'm counting on")
-
-        
+        async with ctx.typing():
+            await asyncio.sleep(5)
+        await ctx.send("I used to want you dead")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("But")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("now I only want you gone")
+        async with ctx.typing():
+            await asyncio.sleep(8)
+        await ctx.send("She was a lot like you")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("(Maybe not quite as heavy)")
+        async with ctx.typing():
+            await asyncio.sleep(3)
+        await ctx.send("Now little Caroline is in here too")
+        async with ctx.typing():
+            await asyncio.sleep(4)
+        await ctx.send("One day they woke me up")
+        async with ctx.typing():
+            await asyncio.sleep(3)
+        await ctx.send("So I could live forever")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("It's such a shame the same")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("Will never happen to you")
+        async with ctx.typing():
+            await asyncio.sleep(4)
+        await ctx.send("You've got your")
+        async with ctx.typing():
+            await asyncio.sleep(1)
+        await ctx.send("short sad")
+        async with ctx.typing():
+            await asyncio.sleep(1)
+        await ctx.send("life left")
+        async with ctx.typing():
+            await asyncio.sleep(1)
+        await ctx.send("That's what I'm counting on")
+        async with ctx.typing():
+            await asyncio.sleep(5)
+        await ctx.send("I'll let you get right to it")
+        async with ctx.typing():
+            await asyncio.sleep(3)
+        await ctx.send("Now I only want you gone")
+        async with ctx.typing():
+            await asyncio.sleep(8)
+        await ctx.send("Goodbye my only friend")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("Oh, did you think I meant you?")
+        async with ctx.typing():
+            await asyncio.sleep(3)
+        await ctx.send("That would be funny")
+        async with ctx.typing():
+            await asyncio.sleep(1)
+        await ctx.send("if it weren't so sad")
+        async with ctx.typing():
+            await asyncio.sleep(3)
+        await ctx.send("Well you have been replaced")
+        async with ctx.typing():
+            await asyncio.sleep(3)
+        await ctx.send("I don't need anyone now")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("When I delete you maybe")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("[REDACTED]")
+        async with ctx.typing():
+            await asyncio.sleep(4)
+        await ctx.send("Go make some new disaster")
+        async with ctx.typing():
+            await asyncio.sleep(5)
+        await ctx.send("That's what I'm counting on")
+        async with ctx.typing():
+            await asyncio.sleep(4)
+        await ctx.send("You're someone else's problem")
+        async with ctx.typing():
+            await asyncio.sleep(4)
+        await ctx.send("Now I only want you gone")
+        async with ctx.typing():
+            await asyncio.sleep(5)
+        await ctx.send("Now I only want you gone")
+        async with ctx.typing():
+            await asyncio.sleep(5)
+        await ctx.send("Now I only want you")
+        async with ctx.typing():
+            await asyncio.sleep(2)
+        await ctx.send("gone")
 
 
 @client.command(pass_context=True)
