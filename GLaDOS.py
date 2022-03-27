@@ -15,7 +15,7 @@ from discord.utils import get
 load_dotenv()
 
 client = commands.Bot(command_prefix = ['-', 'GLaD '])
-TOKEN = os.getenv('TOKEN')
+TOKEN = os.getenv('BOT_TOKEN')
 
 @client.event
 async def on_ready():
