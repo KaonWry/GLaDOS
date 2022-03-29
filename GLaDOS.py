@@ -21,7 +21,7 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 @client.event
 async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name="Portal"))
-    print(f"Logged in as {bot.user.name}({bot.user.id})")
+    print(f"Logged in as {client.user.name}({client.user.id})")
 
 @client.command()
 async def join(ctx):
