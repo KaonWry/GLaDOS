@@ -411,7 +411,7 @@ async def wantyougone(ctx):
             await asyncio.sleep(4)
         await ctx.send("Now I only want you")
         async with ctx.typing():
-            await asyncio.sleep(3)
+            await asyncio.sleep(2.7)
         await ctx.send("gone")
 
 
